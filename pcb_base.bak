@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:pcb_base-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -99,4 +100,129 @@ Wire Wire Line
 Wire Wire Line
 	2500 3950 2500 4150
 Connection ~ 2500 4150
+$Comp
+L Device:C_Small C3
+U 1 1 5BAEBF1A
+P 1650 1650
+F 0 "C3" H 1742 1696 50  0000 L CNN
+F 1 "0.1u" H 1742 1605 50  0000 L CNN
+F 2 "" H 1650 1650 50  0001 C CNN
+F 3 "~" H 1650 1650 50  0001 C CNN
+	1    1650 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C4
+U 1 1 5BAEBF7F
+P 2000 1650
+F 0 "C4" H 2092 1696 50  0000 L CNN
+F 1 "0.1u" H 2092 1605 50  0000 L CNN
+F 2 "" H 2000 1650 50  0001 C CNN
+F 3 "~" H 2000 1650 50  0001 C CNN
+	1    2000 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C5
+U 1 1 5BAEBFA3
+P 2350 1650
+F 0 "C5" H 2442 1696 50  0000 L CNN
+F 1 "0.1u" H 2442 1605 50  0000 L CNN
+F 2 "" H 2350 1650 50  0001 C CNN
+F 3 "~" H 2350 1650 50  0001 C CNN
+	1    2350 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C6
+U 1 1 5BAEBFC6
+P 2700 1650
+F 0 "C6" H 2792 1696 50  0000 L CNN
+F 1 "0.1u" H 2792 1605 50  0000 L CNN
+F 2 "" H 2700 1650 50  0001 C CNN
+F 3 "~" H 2700 1650 50  0001 C CNN
+	1    2700 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C7
+U 1 1 5BAEBFED
+P 3050 1650
+F 0 "C7" H 3142 1696 50  0000 L CNN
+F 1 "4.7u" H 3142 1605 50  0000 L CNN
+F 2 "" H 3050 1650 50  0001 C CNN
+F 3 "~" H 3050 1650 50  0001 C CNN
+	1    3050 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 1550 1650 1450
+Wire Wire Line
+	1650 1450 2000 1450
+Wire Wire Line
+	2000 1450 2000 1550
+Wire Wire Line
+	2000 1450 2350 1450
+Wire Wire Line
+	2350 1450 2350 1550
+Connection ~ 2000 1450
+Wire Wire Line
+	2350 1450 2700 1450
+Wire Wire Line
+	2700 1450 2700 1550
+Connection ~ 2350 1450
+Wire Wire Line
+	2700 1450 3050 1450
+Wire Wire Line
+	3050 1450 3050 1550
+Connection ~ 2700 1450
+Wire Wire Line
+	1650 1750 1650 1850
+Wire Wire Line
+	1650 1850 2000 1850
+Wire Wire Line
+	2000 1850 2000 1750
+Wire Wire Line
+	2000 1850 2350 1850
+Wire Wire Line
+	2350 1850 2350 1750
+Connection ~ 2000 1850
+Wire Wire Line
+	2350 1850 2700 1850
+Wire Wire Line
+	2700 1850 2700 1750
+Connection ~ 2350 1850
+Wire Wire Line
+	2700 1850 3050 1850
+Wire Wire Line
+	3050 1850 3050 1750
+Connection ~ 2700 1850
+$Comp
+L power:VCC #PWR?
+U 1 1 5BAEDB30
+P 1650 1300
+F 0 "#PWR?" H 1650 1150 50  0001 C CNN
+F 1 "VCC" H 1667 1473 50  0000 C CNN
+F 2 "" H 1650 1300 50  0001 C CNN
+F 3 "" H 1650 1300 50  0001 C CNN
+	1    1650 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BAEDBB3
+P 1650 2000
+F 0 "#PWR?" H 1650 1750 50  0001 C CNN
+F 1 "GND" H 1655 1827 50  0000 C CNN
+F 2 "" H 1650 2000 50  0001 C CNN
+F 3 "" H 1650 2000 50  0001 C CNN
+	1    1650 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 1450 1650 1300
+Connection ~ 1650 1450
+Wire Wire Line
+	1650 1850 1650 2000
+Connection ~ 1650 1850
 $EndSCHEMATC
