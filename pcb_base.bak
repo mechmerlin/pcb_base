@@ -1,0 +1,49 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L keyboard_parts:ATMEGA32U4 U1
+U 1 1 5BAEB749
+P 5050 3500
+F 0 "U1" H 5075 4837 60  0000 C CNN
+F 1 "ATMEGA32U4" H 5075 4731 60  0000 C CNN
+F 2 "" H 5050 3500 60  0000 C CNN
+F 3 "" H 5050 3500 60  0000 C CNN
+	1    5050 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L keyboard_parts:XTAL_GND X1
+U 1 1 5BAEB7CE
+P 3000 4150
+F 0 "X1" H 3000 4300 47  0000 C CNN
+F 1 "XTAL_GND" H 3000 4000 47  0000 C CNN
+F 2 "" H 3000 4150 60  0000 C CNN
+F 3 "" H 3000 4150 60  0000 C CNN
+	1    3000 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 5BAEB9CD
+P 2500 4300
+F 0 "C1" H 2550 4400 50  0000 L CNN
+F 1 "22p" H 2550 4200 50  0000 L CNN
+F 2 "" H 2500 4300 50  0001 C CNN
+F 3 "~" H 2500 4300 50  0001 C CNN
+	1    2500 4300
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

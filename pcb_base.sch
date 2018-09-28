@@ -1,0 +1,102 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L keyboard_parts:ATMEGA32U4 U1
+U 1 1 5BAEB749
+P 5050 3500
+F 0 "U1" H 5075 4837 60  0000 C CNN
+F 1 "ATMEGA32U4" H 5075 4731 60  0000 C CNN
+F 2 "" H 5050 3500 60  0000 C CNN
+F 3 "" H 5050 3500 60  0000 C CNN
+	1    5050 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L keyboard_parts:XTAL_GND X1
+U 1 1 5BAEB7CE
+P 3000 4150
+F 0 "X1" H 3000 4300 47  0000 C CNN
+F 1 "XTAL_GND" H 3000 4000 47  0000 C CNN
+F 2 "" H 3000 4150 60  0000 C CNN
+F 3 "" H 3000 4150 60  0000 C CNN
+	1    3000 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 5BAEB9CD
+P 2500 4300
+F 0 "C1" H 2550 4400 50  0000 L CNN
+F 1 "22p" H 2550 4200 50  0000 L CNN
+F 2 "" H 2500 4300 50  0001 C CNN
+F 3 "~" H 2500 4300 50  0001 C CNN
+	1    2500 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 5BAEBC16
+P 3450 4300
+F 0 "C2" H 3500 4400 50  0000 L CNN
+F 1 "22p" H 3500 4200 50  0000 L CNN
+F 2 "" H 3450 4300 50  0001 C CNN
+F 3 "~" H 3450 4300 50  0001 C CNN
+	1    3450 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BAEBCAA
+P 3000 4600
+F 0 "#PWR?" H 3000 4350 50  0001 C CNN
+F 1 "GND" H 3005 4427 50  0000 C CNN
+F 2 "" H 3000 4600 50  0001 C CNN
+F 3 "" H 3000 4600 50  0001 C CNN
+	1    3000 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 4400 2500 4500
+Wire Wire Line
+	2500 4500 3000 4500
+Wire Wire Line
+	3000 4350 3000 4500
+Connection ~ 3000 4500
+Wire Wire Line
+	3000 4500 3000 4600
+Wire Wire Line
+	3450 4500 3000 4500
+Wire Wire Line
+	3450 4400 3450 4500
+Wire Wire Line
+	2500 4200 2500 4150
+Wire Wire Line
+	2500 4150 2700 4150
+Wire Wire Line
+	3300 4150 3450 4150
+Wire Wire Line
+	3450 4150 3450 4200
+Wire Wire Line
+	4000 4050 3450 4050
+Wire Wire Line
+	3450 4050 3450 4150
+Connection ~ 3450 4150
+Wire Wire Line
+	4000 3950 2500 3950
+Wire Wire Line
+	2500 3950 2500 4150
+Connection ~ 2500 4150
+$EndSCHEMATC
